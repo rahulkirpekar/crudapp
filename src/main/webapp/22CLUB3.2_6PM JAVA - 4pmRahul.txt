@@ -1,0 +1,83 @@
+Servlet----Session Tracking
+
+Session Tracking:-
+-------------------
+
+1) HttpSession(class):-
+-------------------------
+Session create[login]:-
+---------------------
+HttpSession session = request.getSession();
+HttpSession session = request.getSession(true);
+
+HttpSession session = request.getSession(false);
+
+Session destroy[logout]:-
+------------------------
+HttpSession session = request.getSession(false);
+session.invalidate();// session--->destroy 
+
+		      Operational Servlets(1000+)
+
+			  OperationalServlet
+			  ******************	
+			FirstServlet	SecondServlet
+
+				LogoutServlet
+
+	loginServlet<--------------------------->logoutServlet
+
+FirstServlet---url copy----logout
+
+
+FirstServlet---url copy
+
+
+https://mail.google.com/mail/u/0/#inbox
+
+
+
+2) Hidden form field
+3) Query String
+4) Cookie
+
+
+
+
+
+
+
+
+Amazon---login-----------------logout
+
+Actions:-
+-----------
+
+	    HttpSession----session object----JSessionId(Rno)
+		|
+	      session object	
+		 |	
+		temp---------------permanent
+
+
+
+		gmail.com---world gmail----->mails
+
+		Session(Duration)
+			session
+		---------------------------
+	       specific user---Personal Data
+	login<---------------------------->logout
+
+
+
+request type:-
+--------------
+
+8
+
+get---data--form---feed---submit---data---url---webserver--request---application
+
+post---data---rm--feed---submit---data---
+		--request[header + body(data)---backend]----webserver--request---application
+
